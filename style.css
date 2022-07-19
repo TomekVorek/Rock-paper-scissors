@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #fffffe;
+    --headline: #272343;
+    --paragraph: #2d334a;
+    --btn: #ffd803;
+    --btn-text: #272343;
+    --font-size: 1.5rem;
+}
+
+body {
+    background-image: url(img/pattern.svg);
+    background-position: center;
+    font-size: 10px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: var(--paragraph);
+    text-align: center;
+    display: grid;
+}
+
+.container h1 {
+    background-color: var(--paragraph);
+    color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 3px 5px 2px #999;
+    margin-bottom: 1rem;
+}
+
+.result-container {
+    color: var(--headline);
+    font-size: var(--font-size);
+    line-height: 4rem;
+    max-width: 500px;
+    background-color: #e3f6f5;
+    border: 3px solid transparent;
+    box-shadow: 5px 8px 5px rgba(45, 51, 74, .3);
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 20px;
+}
+
+#result {
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.choice-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: var(--paragraph);
+    height: 100px;
+    place-items: center;
+    padding: 2rem;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 5px 8px 5px rgba(45, 51, 74, .3);
+}
+
+button {
+    background-color: #fff;
+    color: var(--btn-text);
+    padding: 0 5px;
+    font-size: var(--font-size);
+    box-shadow: 3px 5px 2px #999;
+    border: none;
+    height: 60px;
+    width: 80px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    position: relative;
+    top: -25%;
+}
+
+button img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+}
+
+.succes {
+    color: green;
+}
+
+.draw {
+    color: blue;
+}
+
+.fail {
+    color: red;
+}
